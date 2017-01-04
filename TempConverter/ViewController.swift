@@ -31,6 +31,20 @@ class ViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func convertTapped(_ sender: Any) {
+        
+        if let result = textField.text {
+            
+            if result == "" {
+                return
+            } else {
+                if let num = Double(result) {
+                    let output = num * (9/5) + 32
+                    label.text = String(output)
+                }
+            }
+            
+        }
+        
     }
     
 
