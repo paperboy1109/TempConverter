@@ -64,6 +64,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXy-dz-7xL">
+                                <rect key="frame" x="16" y="617" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pQY-3B-hG5"/>
+                                    <constraint firstAttribute="width" constant="132" id="zoO-qq-DLE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Change Theme"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.33470528989999998" blue="0.23861098759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -71,6 +80,7 @@
                             <constraint firstItem="uNl-y5-OHb" firstAttribute="top" secondItem="6LM-Cg-Sr4" secondAttribute="bottom" constant="110.5" id="2Aw-ie-EjN"/>
                             <constraint firstItem="6LM-Cg-Sr4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7JX-CU-8lN"/>
                             <constraint firstItem="hDf-7i-oi7" firstAttribute="centerY" secondItem="7uI-bn-0G0" secondAttribute="centerY" id="BgG-lX-04W"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fXy-dz-7xL" secondAttribute="bottom" constant="20" id="CsW-QE-dzg"/>
                             <constraint firstItem="7uI-bn-0G0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RTv-Mk-nb5"/>
                             <constraint firstItem="hDf-7i-oi7" firstAttribute="leading" secondItem="7uI-bn-0G0" secondAttribute="trailing" constant="8" id="RaP-BP-r7u"/>
                             <constraint firstItem="uNl-y5-OHb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rqn-vF-pPs"/>
@@ -78,10 +88,12 @@
                             <constraint firstItem="6LM-Cg-Sr4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="X0V-M2-Ycd"/>
                             <constraint firstItem="Xnt-3a-s9L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kUk-Qd-3eu"/>
                             <constraint firstItem="hDf-7i-oi7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tR1-KU-ckI"/>
+                            <constraint firstItem="fXy-dz-7xL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uyk-D2-cju"/>
                             <constraint firstItem="7uI-bn-0G0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zHd-p2-O5g"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="conversionCountLabel" destination="hDf-7i-oi7" id="f2i-OA-BuX"/>
                         <outlet property="label" destination="uNl-y5-OHb" id="YXT-VO-bMh"/>
                         <outlet property="textField" destination="6LM-Cg-Sr4" id="HDt-n9-aJM"/>
                     </connections>
