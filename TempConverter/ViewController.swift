@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         
         gradientLayer.colors = [UIColor.red.cgColor, UIColor.yellow.cgColor]
         
-        self.view.layer.addSublayer(gradientLayer)
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
     
